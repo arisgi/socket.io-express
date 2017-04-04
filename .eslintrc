@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "key-spacing": ["error", { "align": "colon" }],
+    "no-multi-spaces": ["error", {
+      "exceptions": {
+        "ImportDeclaration": true,
+        "VariableDeclarator": true
+      }
+    }]
+  }
+}
