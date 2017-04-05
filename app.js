@@ -1,5 +1,3 @@
-'use strict';
-
 import express  from 'express';
 import http     from 'http';
 import SocketIo from 'socket.io';
@@ -10,7 +8,7 @@ const io     = new SocketIo(server);
 const PORT   = 3000;
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/client/index.html');
+  res.sendFile(`${__dirname}/client/index.html`);
 });
 
 io.on('connection', (socket) => {
