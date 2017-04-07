@@ -7,8 +7,10 @@ const server = http.Server(app);
 const io     = new SocketIo(server);
 const PORT   = 3000;
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-  res.sendFile(`${__dirname}/client/index.html`);
+  res.sendFile(`${__dirname}/public/index.html`);
 });
 
 io.on('connection', (socket) => {
