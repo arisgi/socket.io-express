@@ -18,3 +18,10 @@ export const sendMessage = (payload) => {
     payload,
   };
 };
+
+export const receiveMessage = (payload) => {
+  return {
+    type: 'RECEIVE_MESSAGE',
+    payload,
+  };
+};
