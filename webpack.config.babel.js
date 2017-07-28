@@ -2,7 +2,7 @@ import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 module.exports = {
-  entry: ['babel-polyfill', './src/routes.jsx'],
+  entry: ['babel-polyfill', './src/main.jsx'],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
